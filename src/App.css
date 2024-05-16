@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+
+.btn {
+  
+    font-size: 18px;
+    padding: 12px 32px;
+    /* margin: 1rem; */
+    object-fit: contain;
+    width:fit-content;
+    cursor: pointer;
+    /* border-radius: 2px; */
+    transition: all 0.3s ease;
+    border-radius: 9px;
+    /* backface-visibility:inherit; */
+  }
+  
+  .btn:hover {
+    scale:1.05;
+    border:blur;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-gradient-border {
+
+    border: 2px double transparent;
+     background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(0, 217, 4));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  /* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4ade80; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #0E1630;
+  }
+  
